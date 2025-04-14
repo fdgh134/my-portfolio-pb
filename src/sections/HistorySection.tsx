@@ -34,28 +34,31 @@ export default function HistorySection() {
   };
 
   const historyItems = [
-    { year: "2023", title: "웹 퍼블리셔", desc: "반응형 웹 구축 및 유지보수" },
-    { year: "2024", title: "프론트엔드 전향 준비", desc: "React + TypeScript 프로젝트 진행" },
-    { year: "2025", title: "포트폴리오 제작 중", desc: "Tailwind + GSAP 기반 스크롤 UI" },
+    { year: "2025-01 - 2025-03", title: "항해99 플러스 프론트엔드 교육 이수", desc: "React, TypeScript 기반 실무 중심의 역량 강화" },
+    { year: "2023-03 - 2025-04", title: "메타이노베이션", desc: "php 기반 반응형 웹 퍼블리싱 및 App 디자인 작업" },
+    { year: "2020-02 - 2021-12", title: "PureFishing KOREA", desc: "자사 웹 디자인 및 B2B 페이지 퍼블리싱" },
+    { year: "2018-01 - 2019-11", title: "모아유통", desc: "웹 페이지 유지보수 및 웹 디자인" },
+    { year: "2017-06 - 2017-11", title: "더좋은컴퓨터아트학원 웹 UI/UX 디자인 교육 이수", desc: "웹 UI/UX 디자인 기초 및 실무 교육" },
+    { year: "2011-03 - 2017-03", title: "백석예술대학교", desc: "시각디자인과 졸업" },
   ];
 
   return (
     <section
       id="history"
       ref={sectionRef}
-      className="h-screen bg-gray-100 dark:bg-zinc-800 scroll-mt-16 px-6 py-20 flex flex-col items-center"
+      className="h-screen bg-gray-100 dark:bg-zinc-800 scroll-mt-16 px-[5vw] py-20 flex flex-col items-center"
     >
-      <h2 className="text-3xl font-bold mb-10">📜 이력 섹션</h2>
-      <div className="w-full max-w-xl space-y-6">
+      <h2 className="text-5xl font-bold mb-20">📜 Experience</h2>
+      <div className="w-full max-w-3xl space-y-6">
         {historyItems.map((item, i) => (
           <div
             key={i}
             ref={(el) => setItemRef(el, i)}
-            className="p-4 rounded border bg-white dark:bg-zinc-700 shadow"
+            className="p-4 rounded border bg-white dark:bg-zinc-700 shadow transition-all duration-300 hover:shadow-lg hover:ring-2 hover:ring-blue-400"
           >
-            <p className="text-sm text-gray-500 dark:text-gray-300">{item.year}</p>
-            <p className="text-lg font-semibold">{item.title}</p>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{item.desc}</p>
+            <p className="text-l text-gray-500 dark:text-gray-300">{item.year}</p>
+            <p className="text-3xl font-semibold my-3">{item.title}</p>
+            <p className="text-xl text-gray-800 dark:text-gray-100">{item.desc}</p>
           </div>
         ))}
       </div>

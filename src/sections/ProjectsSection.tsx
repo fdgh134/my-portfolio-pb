@@ -13,14 +13,14 @@ export default function ProjectsSection() {
 
     gsap.fromTo(
       titleRef.current,
-      { opacity: 0, x: -100 },
+      { opacity: 0, y: 60 },
       {
         opacity: 1,
-        x: 0,
+        y: 0,
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
-          end: "top 40%",
+          start: "top 90%",
+          end: "top 60%",
           scrub: true,
         },
       }
@@ -31,38 +31,33 @@ export default function ProjectsSection() {
     <section
       id="projects"
       ref={sectionRef}
-      className="h-screen scroll-mt-16 bg-white dark:bg-zinc-900 px-6 py-16flex items-center justify-center"
+      className="h-screen scroll-mt-16 bg-white dark:bg-zinc-900 px-[5vw] py-16 flex flex-col items-center "
     >
-      <h2
-        ref={titleRef}
-        className="text-3xl font-bold text-center"
-      >
-        🛠️ 프로젝트 섹션
-      </h2>
+      <h2 className="text-3xl font-bold mb-10">🛠️ 프로젝트</h2>
       <div className="overflow-x-auto">
-        <div className="flex space-x-4 min-w-[200%]">
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+        <div ref={titleRef} className="grid grid-cols-4 gap-[2vw] mt-10">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 1
           </div>
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 2
           </div>
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 3
           </div>
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 4
           </div>
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 5
           </div>
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 6
           </div>
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 7
           </div>
-          <div className="w-[300px] h-[200px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
+          <div className="w-[400px] h-[300px] bg-zinc-100 dark:bg-zinc-700 rounded shadow p-4">
             프로젝트 8
           </div>
         </div>

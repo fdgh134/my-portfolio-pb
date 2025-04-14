@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import me from "/icons/me.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,18 +73,57 @@ export default function IntroSection() {
     };
   }, []);
 
+  useEffect(() => {
+    gsap.fromTo(
+      ".intro-avatar",
+      {
+        x: 0,
+        y: 100,
+        scale: 0,
+        rotation: 0,
+        opacity: 0,
+        left: "46%",
+        top: "35%",
+        translateX: "-50%",
+        translateY: "-50%",
+        position: "absolute",
+      },
+      {
+        x: 0,
+        y: 0,
+        scale: 1.5,
+        rotation: 720,
+        opacity: 1,
+        duration: 2,
+        ease: "power3.inOut",
+        left: "46%",
+        top: "23%", 
+        translateX: "-50%",
+        translateY: "-50%",
+      }
+    );
+  }, []);
+
   return (
     <section
       id="intro"
-      className="h-screen flex flex-col justify-center items-center scroll-mt-16 bg-white dark:bg-zinc-900 text-center px-4"
+      className="h-screen flex flex-col justify-around items-center scroll-mt-16 bg-white dark:bg-zinc-900 text-center px-[5vw]"
     >
-      <h2 className="text-4xl font-bold mb-4">👋 안녕하세요!</h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300">
-        저는 손유민 입니다.
-      </p>
-
+      <div className="pt-[24%]">
+        <h2 className="text-7xl mb-12">안녕하세요!</h2>
+        <h3 className="text-5xl dark:text-gray-300">
+          5년차 웹 퍼블리셔 <span className="font-black">손유민</span> 입니다.
+        </h3>
+        <div>
+          <img 
+            src={me} 
+            alt="My Avatar" 
+            className="intro-avatar absolute w-40 rouonded-full"
+          />
+        </div>
+      </div>
       {/* 기술 스택 슬라이드 영역 */}
-      <div ref={wrapperRef} className="w-full mt-12">
+      <div ref={wrapperRef} className="w-full mt-12 pb-[5%]">
         <div
           ref={sliderRef}
           className="flex w-max px-6 text-xl font-semibold text-zinc-700 dark:text-white"
@@ -91,8 +131,8 @@ export default function IntroSection() {
           {[...techIcons, ...techIcons].map((tech, idx) => (
             <div key={idx} className="mx-4 shrink-0 flex flex-col items-center px-4 py-2 bg-white dark:bg-zinc-700 rounded shadow transition-all duration-300
             hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:ring-2 hover:ring-blue-400">
-              <img src={tech.src} alt={tech.name} className="h-10 w-10 object-contain" />
-              <span className="text-sm mt-2">{tech.name}</span>
+              <img src={tech.src} alt={tech.name} className="h-20 w-20 object-contain" />
+              <span className="text-md mt-2">{tech.name}</span>
             </div>
           ))}
         </div>
