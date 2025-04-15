@@ -4,6 +4,7 @@ import IntroSection from './sections/IntroSection';
 import HistorySection from './sections/HistorySection';
 import ProjectsSection from './sections/ProjectsSection';
 import ContactSection from './sections/ContactSection';
+import Footer from './sections/Footer';
 import './index.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <HistorySection />
       <ProjectsSection />
       <ContactSection />
+      <Footer />
     </div>
   )
 }

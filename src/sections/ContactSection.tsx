@@ -19,8 +19,8 @@ export default function ContactSection() {
         y: 0,
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 40%",
-          end: "top 20%",
+          start: "top 70%",
+          end: "top 40%",
           scrub: true,
         },
       }

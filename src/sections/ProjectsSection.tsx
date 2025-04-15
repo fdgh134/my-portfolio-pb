@@ -35,8 +35,8 @@ export default function ProjectsSection() {
     { title: "Metainnovation Table Order", desc: "메타이노베이션 테이블오더 웹페이지", img: "/public/img/meta-tableorder.png", link: "https://soapy-ixora-d44.notion.site/Metainnovation-TableOrder-1d64ddded97d80888419fe8db58fce1c" },
     { title: "Metainnovation POS", desc: "메타이노베이션 포스 웹페이지", img: "/public/img/meta-pos.png", link: "https://soapy-ixora-d44.notion.site/Metainnovation-POS-1d64ddded97d80a5a5ced4335a9435de?pvs=73" },
     { title: "Metainnovation", desc: "메타이노베이션 웹페이지", img: "/public/img/meta-company.png", link: "https://soapy-ixora-d44.notion.site/Metainnovation-1d64ddded97d802abe19ed6fde8a3e62?pvs=73" },
-    { title: "UIUX 디자인", desc: "Figma로 작업한 미구현 디자인 작업물", img: "/public/img/uiux/nail-thum.png" },
-    { title: "상세페이지 작업", desc: "온라인 쇼핑몰에 등록된 상세페이지 작업물", img: "/public/img/nak10.png" },
+    { title: "UIUX 디자인", desc: "Figma로 작업한 미구현 디자인 작업물", img: "/public/img/uiux/nail-thum.png", link: "https://soapy-ixora-d44.notion.site/UIUX-1d64ddded97d80c3b85dff7f6cb2031b" },
+    { title: "상세페이지 작업", desc: "온라인 쇼핑몰에 등록된 상세페이지 작업물", img: "/public/img/nak10.png", link: "https://soapy-ixora-d44.notion.site/1d64ddded97d808b88d0ea4f744b38d5" },
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function ProjectsSection() {
               >
                 <div
                   key={i}
-                  className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-zinc-100 dark:bg-zinc-700 rounded-lg shadow p-4 transition-all duration-300
+                  className="w-full h-[300px] sm:h-[300px] lg:h-[400px] 4xl:h-[500px] bg-zinc-100 dark:bg-zinc-700 rounded-lg shadow p-4 transition-all duration-300
                 hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:ring-2 hover:ring-blue-400"
                   style={{
                     backgroundImage: `url(${project.img})`,

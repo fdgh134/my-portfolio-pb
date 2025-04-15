@@ -49,12 +49,12 @@ export default function HistorySection() {
       className="min-h-screen bg-gray-100 dark:bg-zinc-800 scroll-mt-16 px-[5vw] lg:py-20 md:py-16 sm:py-12 py-8 flex flex-col items-center"
     >
       <h2 className="text-2xl md:text-4xl sm:text-3xl lg:text-5xl font-bold mb-8 md:mb-10 lg:mb-20">📜 Experience</h2>
-      <div className="w-full grid grid-cols-2 max-w-[90vw] md:max-w-[80vw] lg:max-w-[75vw] gap-6 items-stretch">
+      <div className="w-full grid grid-cols-2 4xl:w-[50vw] 4xl:grid-cols-1 max-w-[90vw] md:max-w-[80vw] lg:max-w-[75vw] gap-6 items-stretch">
         {historyItems.map((item, i) => (
           <div
             key={i}
             ref={(el) => setItemRef(el, i)}
-            className="w-full min-h-[100px] sm:min-h-[120px] lg:min-h-[140px] 4xl:min-h-[200px] bg-white dark:bg-zinc-700 rounded-lg shadow p-4 transition-all duration-300 hover:shadow-lg hover:ring-2 hover:ring-blue-400"
+            className="w-full min-h-[100px] sm:min-h-[120px] lg:min-h-[140px] 4xl:min-h-[150px] bg-white dark:bg-zinc-700 rounded-lg shadow p-4 transition-all duration-300 hover:shadow-lg hover:ring-2 hover:ring-blue-400"
           >
             <p className="text-sm md:text-md lg:text-l text-gray-500 dark:text-gray-300">{item.year}</p>
             <p className="text-l md:text-xl lg:text-2xl font-semibold my-1 md:my-2 lg:my-3">{item.title}</p>

@@ -74,6 +74,37 @@ export default function IntroSection() {
   }, []);
 
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    const isTablet = window.innerWidth > 768 && window.innerWidth < 1024;
+    const isQhd = window.innerWidth >= 2559;
+
+    const startLeft = isMobile
+    ? "50%"
+    : isQhd
+    ? "32%"
+    : isTablet
+    ? "40%"
+    : "35%";
+
+  const startTop = isMobile
+    ? "45%"
+    : isQhd
+    ? "32%"
+    : "35%";
+
+  const endLeft = isMobile
+    ? "50%"
+    : isQhd
+    ? "20%"
+    : isTablet
+    ? "40%"
+    : "35%";
+
+  const endTop = isMobile
+    ? "25%"
+    : isQhd
+    ? "16%"
+    : "30%";
     gsap.fromTo(
       ".intro-avatar",
       {
@@ -82,8 +113,8 @@ export default function IntroSection() {
         scale: 0,
         rotation: 0,
         opacity: 0,
-        left: "35%",
-        top: "35%",
+        left: startLeft,
+        top: startTop,
         translateX: "-50%",
         translateY: "-50%",
         position: "absolute",
@@ -96,8 +127,8 @@ export default function IntroSection() {
         opacity: 1,
         duration: 2,
         ease: "power3.inOut",
-        left: "35%",
-        top: "19%", 
+        left: endLeft,
+        top: endTop, 
         translateX: "-50%",
         translateY: "-50%",
       }
@@ -118,7 +149,7 @@ export default function IntroSection() {
           <img 
             src={me} 
             alt="My Avatar" 
-            className="intro-avatar absolute w-24 sm:w-28 lg:w-36 4xl:w-52 rounded-full"
+            className="intro-avatar absolute w-24 sm:w-32 lg:w-40 4xl:w-64 rounded-full"
           />
         </div>
       </div>
