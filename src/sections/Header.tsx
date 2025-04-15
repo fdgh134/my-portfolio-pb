@@ -5,7 +5,7 @@ interface HeaderProps {
 
 export default function Header({ isDark, toggleDark }: HeaderProps) {
   return (
-    <header className="fixed top-0 w-full bg-white dark:bg-zinc-900 shadow z-50">
+    <header className="mx-auto max-w-[2560px] fixed top-0 w-full bg-white dark:bg-zinc-900 shadow z-50">
       <div className="mx-auto px-[5vw] py-3 flex justify-between items-center">
         <h1 className="font-bold text-2xl">YoomJJu</h1>
         <nav className="space-x-[5vw]">

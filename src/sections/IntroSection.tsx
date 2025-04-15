@@ -37,7 +37,7 @@ export default function IntroSection() {
     // 슬라이더 애니메이션 생성 (일단 paused)
     tweenRef.current = gsap.to(slider, {
       x: `-=${slideWidth}`,
-      duration: 70,
+      duration: 100,
       ease: "linear",
       repeat: -1,
       paused: true,
@@ -82,7 +82,7 @@ export default function IntroSection() {
         scale: 0,
         rotation: 0,
         opacity: 0,
-        left: "46%",
+        left: "35%",
         top: "35%",
         translateX: "-50%",
         translateY: "-50%",
@@ -96,8 +96,8 @@ export default function IntroSection() {
         opacity: 1,
         duration: 2,
         ease: "power3.inOut",
-        left: "46%",
-        top: "23%", 
+        left: "35%",
+        top: "19%", 
         translateX: "-50%",
         translateY: "-50%",
       }
@@ -107,18 +107,18 @@ export default function IntroSection() {
   return (
     <section
       id="intro"
-      className="h-screen flex flex-col justify-around items-center scroll-mt-16 bg-white dark:bg-zinc-900 text-center px-[5vw]"
+      className="min-h-screen flex flex-col justify-around items-center scroll-mt-16 bg-white dark:bg-zinc-900 text-center px-[5vw]"
     >
-      <div className="pt-[24%]">
-        <h2 className="text-7xl mb-12">안녕하세요!</h2>
-        <h3 className="text-5xl dark:text-gray-300">
-          5년차 웹 퍼블리셔 <span className="font-black">손유민</span> 입니다.
+      <div className="pt-[45vh] relative">
+        <h2 className="text-4xl md:text-5xl lg:text-7xl mb-6 md:mb-8 lg:mb-12">안녕하세요!</h2>
+        <h3 className="text-2xl md:text-3xl lg:text-5xl dark:text-gray-300">
+          웹 퍼블리셔 <span className="font-black">손유민</span> 입니다.
         </h3>
         <div>
           <img 
             src={me} 
             alt="My Avatar" 
-            className="intro-avatar absolute w-40 rouonded-full"
+            className="intro-avatar absolute w-24 sm:w-28 lg:w-36 4xl:w-52 rounded-full"
           />
         </div>
       </div>
@@ -129,10 +129,10 @@ export default function IntroSection() {
           className="flex w-max px-6 text-xl font-semibold text-zinc-700 dark:text-white"
         >
           {[...techIcons, ...techIcons].map((tech, idx) => (
-            <div key={idx} className="mx-4 shrink-0 flex flex-col items-center px-4 py-2 bg-white dark:bg-zinc-700 rounded shadow transition-all duration-300
+            <div key={idx} className="mx-4 shrink-0 flex flex-col items-center px-4 py-2 bg-white dark:bg-zinc-700 rounded transition-all duration-300
             hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:ring-2 hover:ring-blue-400">
-              <img src={tech.src} alt={tech.name} className="h-20 w-20 object-contain" />
-              <span className="text-md mt-2">{tech.name}</span>
+              <img src={tech.src} alt={tech.name} className="h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 object-contain" />
+              <span className="text-sm lg:text-md mt-2">{tech.name}</span>
             </div>
           ))}
         </div>

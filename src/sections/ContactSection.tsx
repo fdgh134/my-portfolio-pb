@@ -31,26 +31,26 @@ export default function ContactSection() {
     <section
       id="contact"
       ref={sectionRef}
-      className="h-screen flex items-center justify-center bg-gray-100 dark:bg-zinc-800 scroll-mt-16"
+      className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-zinc-800 scroll-mt-16"
     >
-      <div ref={titleRef}>
+      <div ref={titleRef} className="px-4 md:px-6">
         <div className="flex flex-col items-left justify-center">
-          <p className="text-5xl">
+          <p className="lg:text-5xl md:text-3xl sm:text-2xl text-xl">
             같이 일할 파트너를 찾고 계신가요?
           </p>
           <h2
             ref={titleRef}
-            className="text-7xl font-bold my-12"
+            className="lg:text-7xl md:text-5xl sm:text-4xl text-3xl font-bold lg:my-12 md:my-8 sm:my-6 my-4"
           >
             fdgh134@naver.com
           </h2>
-          <p className="text-3xl">
+          <p className="lg:text-3xl md:text-2xl sm:text-xl text-xl">
             합류 및 협업 제안이 있으시면 언제든지 연락 주세요😀 빠르게 회신 드리겠습니다!
           </p>
         </div>
         <a 
           href="mailto:fdgh134@naver.com"
-          className="mt-12 inline-block text-3xl font-semibold text-blue-400"  
+          className="lg:mt-12 md:mt-8 sm:mt-6 mt-4 inline-block lg:text-3xl md:text-2xl sm:text-xl text-xl font-semibold text-blue-400"  
         >
           📧 메일 보내기
         </a>
