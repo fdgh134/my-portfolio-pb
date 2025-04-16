@@ -104,7 +104,7 @@ export default function IntroSection() {
     ? "25%"
     : isQhd
     ? "16%"
-    : "30%";
+    : "25%";
     gsap.fromTo(
       ".intro-avatar",
       {
