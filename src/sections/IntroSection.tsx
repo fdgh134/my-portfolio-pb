@@ -104,7 +104,7 @@ export default function IntroSection() {
     ? "25%"
     : isQhd
     ? "16%"
-    : "30%";
+    : "25%";
     gsap.fromTo(
       ".intro-avatar",
       {
@@ -149,7 +149,7 @@ export default function IntroSection() {
           <img 
             src={me} 
             alt="My Avatar" 
-            className="intro-avatar absolute w-24 sm:w-32 lg:w-40 4xl:w-64 rounded-full"
+            className="intro-avatar absolute w-24 sm:w-32 lg:w-34 4xl:w-64 rounded-full"
           />
         </div>
       </div>
