@@ -46,7 +46,7 @@ export default function ProjectsSection() {
       className="h-screen snap-start snap-always scroll-mt-16 bg-white dark:bg-zinc-900 px-[5vw] lg:py-20 md:py-16 sm:py-12 py-8 flex flex-col items-center "
     >
       <h2 className="text-5xl font-bold mb-8 md:mb-10 lg:mb-20">🛠️ 프로젝트</h2>
-      <div className="w-full scrollable max-h-screen overflow-y-auto">
+      <div className="w-full scrollable max-h-screen overflow-y-auto overflow-x-hidden">
         <div ref={titleRef} className="grid 3xl:grid-cols-3 grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <div className="flex flex-col gap-2">
