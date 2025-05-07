@@ -15,7 +15,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className="mx-auto max-w-[2560px] min-h-screen bg-white text-black dark:bg-zinc-900 dark:text-white transition-colors duration-300">
+    <div className="mx-auto max-w-[2560px] min-h-screen overflow-x-hidden bg-white text-black dark:bg-zinc-900 dark:text-white transition-colors duration-300">
       <Header isDark={isDark} toggleDark={() => setIsDark(!isDark)} />
       <IntroSection />
       <HistorySection />

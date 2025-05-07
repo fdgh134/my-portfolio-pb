@@ -34,6 +34,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+html,
+body,
+#root {
   overflow-x: hidden;
 }

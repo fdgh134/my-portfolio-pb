@@ -157,7 +157,7 @@ export default function IntroSection() {
       <div ref={wrapperRef} className="w-full mt-12 pb-[5%]">
         <div
           ref={sliderRef}
-          className="flex w-max px-6 text-xl font-semibold text-zinc-700 dark:text-white"
+          className="flex flex-row px-6 text-xl font-semibold text-zinc-700 dark:text-white"
         >
           {[...techIcons, ...techIcons].map((tech, idx) => (
             <div key={idx} className="mx-4 shrink-0 flex flex-col items-center px-4 py-2 bg-white dark:bg-zinc-700 rounded transition-all duration-300
