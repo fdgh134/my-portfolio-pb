@@ -138,7 +138,7 @@ export default function IntroSection() {
   return (
     <section
       id="intro"
-      className="min-h-screen flex flex-col justify-around items-center scroll-mt-16 bg-white dark:bg-zinc-900 text-center px-[5vw]"
+      className="min-h-screen snap-start snap-always flex flex-col justify-around items-center scroll-mt-16 bg-white dark:bg-zinc-900 text-center px-[5vw]"
     >
       <div className="pt-[45vh] relative">
         <h2 className="text-4xl md:text-5xl lg:text-7xl mb-6 md:mb-8 lg:mb-12">안녕하세요!</h2>

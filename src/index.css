@@ -39,3 +39,8 @@ body,
 #root {
   overflow-x: hidden;
 }
+
+html,
+body {
+  scroll-snap-type: y mandatory;
+}

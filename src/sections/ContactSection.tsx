@@ -31,7 +31,7 @@ export default function ContactSection() {
     <section
       id="contact"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-zinc-800 scroll-mt-16"
+      className="min-h-screen snap-start snap-always flex items-center justify-center bg-gray-100 dark:bg-zinc-800 scroll-mt-16"
     >
       <div ref={titleRef} className="px-4 md:px-6">
         <div className="flex flex-col items-left justify-center">
