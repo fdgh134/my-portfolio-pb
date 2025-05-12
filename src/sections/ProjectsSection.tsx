@@ -47,7 +47,7 @@ export default function ProjectsSection() {
     >
       <h2 className="text-5xl font-bold mb-8 md:mb-10 lg:mb-20">🛠️ 프로젝트</h2>
       <div className="w-full scrollable max-h-screen overflow-y-auto overflow-x-hidden">
-        <div ref={titleRef} className="grid 3xl:grid-cols-3 grid-cols-2 gap-8">
+        <div ref={titleRef} className="grid grid-cols-1 3xl:grid-cols-3 sm:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <div className="flex flex-col gap-2">
               <a 

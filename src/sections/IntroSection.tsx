@@ -93,7 +93,7 @@ export default function IntroSection() {
     : "35%";
 
   const endLeft = isMobile
-    ? "50%"
+    ? "35%"
     : isQhd
     ? "20%"
     : isTablet
