@@ -28,6 +28,7 @@ export default function ProjectsSection() {
   }, []);
 
   const projects = [
+    { title: "일정 관리 서비스 깜빡", desc: "구글 계정 연동 개인 일정 관리 페이지", img: "/img/scheduler.png", link: "https://soapy-ixora-d44.notion.site/1fc4ddded97d80dd97b3c275d8970773" },
     { title: "마비노기 Open Api 웹페이지", desc: "인게임 내 경매장, 전체 채팅, NPC 아이템 정보 확인 페이지", img: "/img/mabinogiApi.jpg", link: "https://soapy-ixora-d44.notion.site/Mabinogi-Api-1d64ddded97d8039a863f8abb0b58fb4" },
     { title: "더리워드 App", desc: "더리워드 App UI 디자인", img:"/img/theReword.png", link: "https://soapy-ixora-d44.notion.site/APP-1d64ddded97d80c5a50acad3499a5dae?pvs=73" },
     { title: "GLOX 브랜드 페이지", desc: "자전거 캐리어 제품 웹페이지", img: "/img/meta-glox.png", link: "https://soapy-ixora-d44.notion.site/GLOX-1d64ddded97d8057bf53cef6eb87a506" },
