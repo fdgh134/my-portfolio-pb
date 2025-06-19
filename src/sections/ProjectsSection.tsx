@@ -28,6 +28,7 @@ export default function ProjectsSection() {
   }, []);
 
   const projects = [
+    { title: "Mabinogi 모바일 도우미", desc: "일일, 주간 체크리스트, 게임 정보 제공을 위한 SPA 웹 앱", img: "/img/MabinogiM.png", link: "https://www.notion.so/Mabinogi-2174ddded97d800b847bd125295e150c" },
     { title: "일정 관리 서비스 깜빡", desc: "구글 계정 연동 개인 일정 관리 페이지", img: "/img/scheduler.png", link: "https://soapy-ixora-d44.notion.site/1fc4ddded97d80dd97b3c275d8970773" },
     { title: "마비노기 Open Api 웹페이지", desc: "인게임 내 경매장, 전체 채팅, NPC 아이템 정보 확인 페이지", img: "/img/mabinogiApi.jpg", link: "https://soapy-ixora-d44.notion.site/Mabinogi-Api-1d64ddded97d8039a863f8abb0b58fb4" },
     { title: "더리워드 App", desc: "더리워드 App UI 디자인", img:"/img/theReword.png", link: "https://soapy-ixora-d44.notion.site/APP-1d64ddded97d80c5a50acad3499a5dae?pvs=73" },
