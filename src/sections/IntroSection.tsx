@@ -143,7 +143,7 @@ export default function IntroSection() {
       <div className="pt-[45vh] relative">
         <h2 className="text-4xl md:text-5xl lg:text-7xl mb-6 md:mb-8 lg:mb-12">안녕하세요!</h2>
         <h3 className="text-2xl md:text-3xl lg:text-5xl dark:text-gray-300">
-          웹 퍼블리셔 <span className="font-black">손유민</span> 입니다.
+          웹디&퍼블리셔 <span className="font-black">손유민</span> 입니다.
         </h3>
         <div>
           <img 
