@@ -13,6 +13,7 @@ export default function Footer() {
           >
             github
           </a>
+          {/*
           <a
             href="https://velog.io/@yoomin101/posts"
             target="_blank"
@@ -21,6 +22,7 @@ export default function Footer() {
           >
             blog
           </a>
+          */}
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import Header from './sections/Header';
 import IntroSection from './sections/IntroSection';
 import HistorySection from './sections/HistorySection';
 import ProjectsSection from './sections/ProjectsSection';
-import ContactSection from './sections/ContactSection';
+//import ContactSection from './sections/ContactSection';
 import Footer from './sections/Footer';
 import './index.css';
 
@@ -74,7 +74,7 @@ function App() {
       <IntroSection />
       <HistorySection />
       <ProjectsSection />
-      <ContactSection />
+      {/*<ContactSection />*/}
       <Footer />
     </div>
   )
