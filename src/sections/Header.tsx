@@ -12,7 +12,7 @@ export default function Header({ isDark, toggleDark }: HeaderProps) {
           <a href="#intro" className="hover:underline font-semibold">Introduce</a>
           <a href="#history" className="hover:underline font-semibold">Experience</a>
           <a href="#projects" className="hover:underline font-semibold">Projects</a>
-          <a href="#contact" className="hover:underline font-semibold">Contact</a>
+          {/*<a href="#contact" className="hover:underline font-semibold">Contact</a>*/}
         </nav>
         <button onClick={toggleDark} className="ml-4 border px-2 py-1 rounded">
           {isDark ? '☀️' : '🌙'}
